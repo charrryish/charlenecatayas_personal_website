@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charlene Joy D. Catayas — IT student, dancer, writer, and K-pop enthusiast.">
+  <meta name="theme-color" content="#FBF7EE">
+  <title>Charlene Joy | A Little World of Mine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <!-- Mobile top bar -->
+  <header class="mobile-bar">
+    <a class="brand" href="#home"><span class="brand-mark">C.</span><span>Charlene Joy</span></a>
+    <button class="icon-btn" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-profile">
+      <div class="avatar"><img src="images/charlene.jpg" alt="Charlene Joy" data-ph="YOUR PHOTO"></div>
+      <h2>Charlene Joy</h2>
+      <p>BSIT student · writer · wanderer</p>
+      <span class="status"><i></i> Open to new ideas</span>
+    </div>
+    <nav class="side-nav" id="sideNav" aria-label="Main navigation">
+      <a href="#home" class="active"><span>⌂</span>Home</a>
+      <a href="#about"><span>☺</span>About me</a>
+      <a href="#mood-world"><span>✦</span>Pick a mood</a>
+      <a href="#achievements"><span>★</span>Achievements</a>
+      <a href="#projects"><span>⌘</span>Projects</a>
+      <a href="#skills"><span>⚡</span>Skills</a>
+      <a href="#interests"><span>♫</span>My favorites</a>
+      <a href="#wishlist"><span>✈</span>Wishlist</a>
+      <a href="#gallery"><span>▣</span>Gallery</a>
+      <a href="#charlene-exe"><span>$_</span>charlene.exe</a>
+      <a href="#quiz"><span>?</span>Fun quiz</a>
+      <a href="#visitor-note"><span>♡</span>Leave a note</a>
+      <a href="#contact"><span>✉</span>Find me</a>
+    </nav>
+    <div class="side-bottom">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><span id="themeIcon">☾</span><span id="themeLabel">Dark mode</span></button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="content">
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> HELLO, WELCOME TO MY WORLD</span>
+        <h1>Hi, I'm <span class="grad">Charlene&nbsp;Joy.</span></h1>
+        <p class="typed-line">I'm <strong id="typed"></strong><span class="cursor">|</span></p>
+        <p class="hero-hook">IT student by day, K-pop and coffee by night.</p>
+        <p class="lead">A curious builder, sports writer, dancer, and sunset chaser. Explore my projects, favorite things, and little moments.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#achievements">See my achievements ↓</a>
+          <a class="btn btn-ghost" href="#interests">My little favorites</a>
+        </div>
+        <div class="stats">
+          <div><strong data-count="85">0</strong><span>Liturgy Club members+</span></div>
+          <div><strong>4</strong><span>sports covered</span></div>
+          <div><strong>∞</strong><span>things to learn</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <figure class="photo p-main"><img src="images/charlene.jpg" alt="Charlene Joy portrait" data-ph="YOUR PORTRAIT"><figcaption>that's me ✦</figcaption></figure>
+        <figure class="photo p-side"><img src="images/hero-sunset.jpg" alt="Sunset" data-ph="SUNSET PHOTO"><figcaption>sunsets make me pause</figcaption></figure>
+        <div class="sticker">STAY<br>CURIOUS<br>✳</div>
+        <span class="blob b1"></span><span class="blob b2"></span>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="head"><span class="kicker">01 · THE PERSON BEHIND THE COLORS</span><h2>A little about <em>me.</em></h2></div>
+      <div class="about-grid">
+        <article class="card story">
+          <h3>Curious by nature. Soft spot for the simple things.</h3>
+          <p>I'm Charlene, an IT student who loves learning how things work and finding new ways to express myself. I've led a club, run a K-pop community page, and written sports stories, so I'm comfortable both behind a screen and in front of people.</p>
+          <p>I'm family-oriented, and the people I love are a big part of my world. Give me a mountain view, the sea, or a good sunset and I'll probably stop to enjoy it.</p>
+          <div class="chips"><span>♧ nature</span><span>♫ music</span><span>✧ dance</span><span>♡ family</span><span>✎ writing</span></div>
+        </article>
+        <div class="facts">
+          <div class="fact"><span>🎂</span><div><small>Birthday</small><strong>March 20, 2006</strong></div></div>
+          <div class="fact"><span>✦</span><div><small>Age</small><strong id="age">20 years old</strong></div></div>
+          <div class="fact"><span>📍</span><div><small>Hometown</small><strong>Alegria, Cebu, Philippines</strong></div></div>
+          <div class="fact"><span>🎓</span><div><small>Studying</small><strong>BS Information Technology</strong></div></div>
+          <div class="fact"><span>🌱</span><div><small>Currently</small><strong>Learning, growing, exploring</strong></div></div>
+        </div>
+      </div>
+      <article class="currently-card card">
+        <div><span class="kicker">A LITTLE UPDATE</span><h3>Currently, I'm into…</h3><p><strong>Watching:</strong> <em>Doctor X</em><br><strong>Learning:</strong> Japanese vocabulary<br><strong>Current little goal:</strong> keep learning a little every day.</p></div>
+        <span class="currently-stamp" aria-hidden="true">今<br>✦</span>
+      </article>
+    </section>
+
+    <section id="mood-world" class="reveal mood-section">
+      <div class="head"><span class="kicker">A SMALL INTERACTIVE HELLO</span><h2>Pick a mood, <em>find my world.</em></h2><p>Choose what you need right now, and I'll show you a little corner of my world.</p></div>
+      <div class="mood-options" role="group" aria-label="Choose a mood">
+        <button class="mood-choice" type="button" data-mood="peace"><span>🌿</span><strong>I need peace</strong><small>Nature, sea, and quiet moments</small></button>
+        <button class="mood-choice" type="button" data-mood="comfort"><span>☕</span><strong>I need comfort</strong><small>Coffee and a familiar story</small></button>
+        <button class="mood-choice" type="button" data-mood="energy"><span>🎧</span><strong>I need energy</strong><small>K-pop and dance mode</small></button>
+        <button class="mood-choice" type="button" data-mood="inspiration"><span>🌅</span><strong>I need inspiration</strong><small>Sunsets and future dreams</small></button>
+      </div>
+      <article class="mood-result card" id="moodResult" aria-live="polite" hidden>
+        <div class="mood-result-icon" id="moodResultIcon">🌿</div><div><span class="tag" id="moodResultTag">MY RESET BUTTON</span><h3 id="moodResultTitle">A little peace</h3><p id="moodResultText"></p><a class="link" id="moodResultLink" href="#tab-nature">Explore this part of my world ↗</a></div>
+      </article>
+    </section>
+
+    <section id="achievements" class="reveal alt">
+      <div class="head"><span class="kicker">03 · LEADERSHIP, MEDIA &amp; MORE</span><h2>My <em>achievements.</em></h2><p>Roles where I learned to lead, write, and build communities.</p></div>
+      <div class="timeline">
+        <article class="ach">
+          <div class="ach-icon c-green">★</div>
+          <div class="ach-body">
+            <span class="tag">LEADERSHIP</span>
+            <h3>Governor, Liturgy Club</h3>
+            <p>Helped lead a club of 85+ members and coordinate liturgical activities with teamwork, responsibility, and service.</p>
+            <div class="chips"><span>leadership</span><span>teamwork</span><span>service</span></div>
+          </div>
+        </article>
+        <article class="ach">
+          <div class="ach-icon c-pink">♫</div>
+          <div class="ach-body">
+            <span class="tag">SOCIAL MEDIA</span>
+            <h3>Page Manager, Stayology</h3>
+            <p>Managed Stayology content and community engagement, building experience in planning posts and connecting with fans.</p>
+            <div class="chips"><span>content creation</span><span>community</span><span>engagement</span></div>
+          </div>
+        </article>
+        <article class="ach">
+          <div class="ach-icon c-blue">✎</div>
+          <div class="ach-body">
+            <span class="tag">JOURNALISM</span>
+            <h3>Sports Writer &amp; Journalist</h3>
+            <p>Wrote an RSPC sepak takraw game story and covered smaller basketball, volleyball, and badminton competitions for The Rock.</p>
+            <div class="chips"><span>writing</span><span>reporting</span><span>deadlines</span></div>
+          </div>
+        </article>
+        <article class="ach">
+          <div class="ach-icon c-gold">⌘</div>
+          <div class="ach-body">
+            <span class="tag">TECH</span>
+            <h3>IT Student &amp; Builder</h3>
+            <p>Studying Information Technology and building projects, including this website, while going deeper into Python.</p>
+            <div class="chips"><span>HTML/CSS/JS</span><span>Python (learning)</span><span>problem solving</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <div class="head"><span class="kicker">04 · THINGS I'VE MADE &amp; PRACTICED</span><h2>Small projects, <em>real learning.</em></h2><p>School work and practice projects that help me learn by doing.</p></div>
+      <div class="project-grid">
+        <article class="card project-card"><span class="project-icon">⌘</span><span class="tag">HTML · CSS · JAVASCRIPT</span><h3>This personal website</h3><p>A one-page profile built to turn scrolling into exploration.</p><button class="detail-toggle" type="button" aria-expanded="false" aria-controls="project-detail-1">Behind the build +</button><div class="project-detail" id="project-detail-1" hidden><p><strong>Goal:</strong> introduce myself through a clear, interactive profile.</p><p><strong>Tools:</strong> HTML for structure, CSS for layout and color, JavaScript for interactions.</p><p><strong>Challenge:</strong> balancing playful details with easy navigation.</p><p><strong>What I'd improve next:</strong> test with more users and refine anything confusing based on their feedback.</p></div><span class="project-status">Personal project</span></article>
+        <article class="card project-card"><span class="project-icon">🍽</span><span class="tag">SCHOOL PROJECT</span><h3>Grab N Kaon</h3><p>A food-related project concept that helped me think about organizing information around user needs.</p><button class="detail-toggle" type="button" aria-expanded="false" aria-controls="project-detail-2">Behind the build +</button><div class="project-detail" id="project-detail-2" hidden><p><strong>Goal:</strong> present the project idea in a way that is easy to understand.</p><p><strong>Focus:</strong> organizing content and considering what a user would need to find first.</p><p><strong>What I'd improve next:</strong> gather feedback from potential users before deciding which features matter most.</p></div><span class="project-status">School activity</span></article>
+        <article class="card project-card"><span class="project-icon">▤</span><span class="tag">ACCOUNTING / RECORDS</span><h3>Accounting ledger</h3><p>Practiced arranging transactions and records clearly, with attention to accurate entries and totals.</p><button class="detail-toggle" type="button" aria-expanded="false" aria-controls="project-detail-3">Behind the build +</button><div class="project-detail" id="project-detail-3" hidden><p><strong>Goal:</strong> keep transaction information organized and readable.</p><p><strong>What I practiced:</strong> careful data entry, checking totals, and maintaining consistency.</p><p><strong>What I'd improve next:</strong> add validation checks to help catch incomplete or inconsistent entries.</p></div><span class="project-status">Class activity</span></article>
+        <article class="card project-card"><span class="project-icon">🐍</span><span class="tag">PYTHON · BEGINNER PRACTICE</span><h3>Small coding exercises</h3><p>Working through beginner exercises to strengthen my logic and build confidence with Python.</p><button class="detail-toggle" type="button" aria-expanded="false" aria-controls="project-detail-4">Behind the build +</button><div class="project-detail" id="project-detail-4" hidden><p><strong>Goal:</strong> understand the reasoning behind a solution, not just make it run.</p><p><strong>What I practice:</strong> breaking problems into smaller steps, testing, and learning from errors.</p><p><strong>What I'd improve next:</strong> combine small exercises into a useful project that solves a real problem.</p></div><span class="project-status">Ongoing practice</span></article>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <div class="head"><span class="kicker">04 · WHAT I BRING</span><h2>My <em>skills.</em></h2></div>
+      <div class="skill-grid">
+        <article class="card skill-card">
+          <h3><span class="dot c-green"></span>Tech</h3>
+          <div class="chips big"><span>Query basics</span><span>Python (growing)</span><span>Problem solving</span></div>
+        </article>
+        <article class="card skill-card">
+          <h3><span class="dot c-pink"></span>Creative &amp; media</h3>
+          <div class="chips big"><span>Sports writing</span><span>Content creation</span><span>Social media management</span><span>Dance &amp; choreography</span></div>
+        </article>
+        <article class="card skill-card">
+          <h3><span class="dot c-blue"></span>People</h3>
+          <div class="chips big"><span>Leadership</span><span>Teamwork</span><span>Communication</span><span>Comfortable on my own</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="interests" class="reveal alt">
+      <div class="head"><span class="kicker">06 · MY LITTLE FAVORITES</span><h2>Things that make me <em>happy.</em></h2><p>Pick a tab. This is the comfort corner.</p></div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="kpop" role="tab">♫ K-pop</button>
+        <button class="tab" data-tab="drama" role="tab">♡ K-drama</button>
+        <button class="tab" data-tab="coffee" role="tab">☕ Coffee</button>
+        <button class="tab" data-tab="dance" role="tab">✧ Dance</button>
+        <button class="tab" data-tab="nature" role="tab">🌿 Nature</button>
+      </div>
+
+      <div class="panel active" id="tab-kpop">
+        <p class="panel-intro">K-pop is my safe place, and it's not only the songs. The variety shows make a stressful day feel lighter.</p>
+        <div class="two">
+          <article class="artist card">
+            <figure class="photo-flat"><img src="images/seventeen.jpg" alt="SEVENTEEN" data-ph="SEVENTEEN PHOTO"><figcaption>SEVENTEEN</figcaption></figure>
+            <div><h3>SEVENTEEN</h3><p>Their teamwork and humor, alongside the music, make following them feel like more than a playlist. <em>Going Seventeen</em> and <em>NANA TOUR</em> are my go-to comfort watches.</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=SEVENTEEN+official+music+videos" target="_blank" rel="noopener noreferrer">Explore their music ↗</a></div>
+          </article>
+          <article class="artist card">
+            <figure class="photo-flat"><img src="images/stray-kids.jpg" alt="Stray Kids" data-ph="STRAY KIDS PHOTO"><figcaption>STRAY KIDS</figcaption></figure>
+            <div><h3>Stray Kids</h3><p>Their sound brings the energy, and <em>SKZ CODE</em> gives me funny, familiar moments to relax and smile.</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=Stray+Kids+official+music+videos" target="_blank" rel="noopener noreferrer">Explore their music ↗</a></div>
+          </article>
+        </div>
+        <div class="shows">
+          <a href="https://www.youtube.com/results?search_query=Going+Seventeen+official" target="_blank" rel="noopener noreferrer"><b>01</b>Going Seventeen<small>games &amp; chaos</small></a>
+          <a href="https://www.youtube.com/results?search_query=NANA+TOUR+with+SEVENTEEN" target="_blank" rel="noopener noreferrer"><b>02</b>NANA TOUR with SEVENTEEN<small>warm travel moments</small></a>
+          <a href="https://www.youtube.com/results?search_query=SKZ+CODE+official" target="_blank" rel="noopener noreferrer"><b>03</b>SKZ CODE<small>playful &amp; competitive</small></a>
+        </div>
+        <article class="now-playing card">
+          <div class="playing-disc" aria-hidden="true">♫</div>
+          <div class="now-playing-copy"><span class="kicker">NOW PLAYING · YOUR CHOICE</span><h3>My K-pop listening corner</h3><p>Pick a song or playlist when you're ready. Nothing plays automatically.</p>
+          <a class="link" href="https://open.spotify.com/search/SEVENTEEN%20Stray%20Kids" target="_blank" rel="noopener noreferrer">Open SEVENTEEN &amp; Stray Kids on Spotify ↗</a></div>
+        </article>
+      </div>
+
+      <div class="panel" id="tab-drama">
+        <p class="panel-intro">What mood are you in? Tap one to filter my recommendations.</p>
+        <div class="filters" id="dramaFilters">
+          <button class="chip-btn active" data-f="all">All</button>
+          <button class="chip-btn" data-f="romance">♡ Romance</button>
+          <button class="chip-btn" data-f="comedy">☀ Comedy &amp; healing</button>
+          <button class="chip-btn" data-f="mystery">☾ Mystery &amp; fantasy</button>
+        </div>
+        <div class="drama-grid" id="dramaGrid">
+          <a class="drama" data-m="romance" style="--g:linear-gradient(135deg,#FFB2C5,#FFE3C1)" href="https://www.google.com/search?q=Queen+of+Tears+K-drama" target="_blank" rel="noopener noreferrer"><b>Queen of Tears</b><span>Big emotional romance about love and finding your way back.</span></a>
+          <a class="drama" data-m="romance" style="--g:linear-gradient(135deg,#9ADDF0,#D9C2FF)" href="https://www.google.com/search?q=Crash+Landing+on+You+K-drama" target="_blank" rel="noopener noreferrer"><b>Crash Landing on You</b><span>Romance with humor, suspense, and characters you care about.</span></a>
+          <a class="drama" data-m="romance" style="--g:linear-gradient(135deg,#A5D99C,#FCE6A0)" href="https://www.google.com/search?q=Hometown+Cha-Cha-Cha+K-drama" target="_blank" rel="noopener noreferrer"><b>Hometown Cha-Cha-Cha</b><span>Warm small-town story with community and everyday comfort.</span></a>
+          <a class="drama" data-m="comedy" style="--g:linear-gradient(135deg,#D9C2FF,#F8B7D1)" href="https://www.google.com/search?q=Weightlifting+Fairy+Kim+Bok-joo" target="_blank" rel="noopener noreferrer"><b>Weightlifting Fairy Kim Bok-joo</b><span>Sweet story about friendship, first love, and growing up.</span></a>
+          <a class="drama" data-m="comedy" style="--g:linear-gradient(135deg,#FFE27A,#FFAD90)" href="https://www.google.com/search?q=Welcome+to+Waikiki+K-drama" target="_blank" rel="noopener noreferrer"><b>Welcome to Waikiki</b><span>Chaotic friendships and ridiculous situations for a good laugh.</span></a>
+          <a class="drama" data-m="comedy" style="--g:linear-gradient(135deg,#A5D99C,#A6DFF0)" href="https://www.google.com/search?q=Reply+1988+K-drama" target="_blank" rel="noopener noreferrer"><b>Reply 1988</b><span>Family, friendship, neighbors, and the memories that shape us.</span></a>
+          <a class="drama" data-m="mystery" style="--g:linear-gradient(135deg,#A5DFF0,#7A9BD1)" href="https://www.google.com/search?q=Doctor+X+Korean+drama" target="_blank" rel="noopener noreferrer"><b>Doctor X</b><span>Medical drama with mystery and a sharp, unexpected case.</span></a>
+          <a class="drama" data-m="mystery" style="--g:linear-gradient(135deg,#D9C2FF,#A9A2DD)" href="https://www.google.com/search?q=Hotel+del+Luna+K-drama" target="_blank" rel="noopener noreferrer"><b>Hotel del Luna</b><span>Magical fantasy with ghosts, mystery, and emotional backstories.</span></a>
+          <a class="drama" data-m="mystery" style="--g:linear-gradient(135deg,#A6DFF0,#A5D99C)" href="https://www.google.com/search?q=Dr+Romantic+K-drama" target="_blank" rel="noopener noreferrer"><b>Dr. Romantic</b><span>Medical drama about pressure, teamwork, and doing the right thing.</span></a>
+        </div>
+      </div>
+
+      <div class="panel" id="tab-coffee">
+        <div class="two center">
+          <figure class="photo-flat tall"><img src="images/my-coffee.jpg" alt="My daily coffee" data-ph="YOUR COFFEE PHOTO"><figcaption>little cup, little reset ☕</figcaption></figure>
+          <div>
+            <span class="kicker">MY EVERYDAY COMFORT</span>
+            <h3 class="big-h">A cozy pause before the next thing.</h3>
+            <p>Whether I'm starting the day, studying, or taking a break, coffee is my little ritual for slowing down.</p>
+            <p class="callout">My go-to order: <button class="latte-egg" id="latteEgg" type="button" aria-label="Reveal a Spanish latte message">Spanish latte ☕</button></p>
+            <p class="latte-message" id="latteMessage" hidden>Little reminder: take a sip, breathe, and enjoy the pause. ♡</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="tab-dance">
+        <div class="two center">
+          <figure class="photo-flat tall"><img src="images/my-dance.jpg" alt="Me dancing" data-ph="DANCE PHOTO"><figcaption>feeling the beat ✧</figcaption></figure>
+          <div>
+            <span class="kicker">MOVEMENT IS JOY</span>
+            <h3 class="big-h">Learning choreography, one count at a time.</h3>
+            <p>Dancing is where my K-pop love turns into something I can do. Learning steps, feeling the beat, and getting better each practice.</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=K-pop+dance+practice" target="_blank" rel="noopener noreferrer">Watch dance practices ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="tab-nature">
+        <p class="panel-intro">Sunsets, mountains, and the sea are my reset button.</p>
+        <div class="three">
+          <figure class="photo-flat"><img src="images/my-mountain.jpg" alt="Mountain" data-ph="MOUNTAIN PHOTO"><figcaption>the mountains 🌿</figcaption></figure>
+          <figure class="photo-flat"><img src="images/my-sea.jpg" alt="Sea" data-ph="SEA PHOTO"><figcaption>the sea 🌊</figcaption></figure>
+          <figure class="photo-flat"><img src="images/my-sunset.jpg" alt="Sunset" data-ph="SUNSET PHOTO"><figcaption>the sunset 🌅</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="wishlist" class="reveal">
+      <div class="head"><span class="kicker">07 · STILL BECOMING</span><h2>Where I want to <em>go &amp; grow.</em></h2></div>
+      <div class="three">
+        <article class="card goal"><span class="g-ico">⌘</span><h3>Go deeper into Python</h3><p>I want to understand Python beyond the basics and build real projects. It's part of the career I'm aiming for.</p></article>
+        <article class="card goal"><span class="g-ico">✧</span><h3>Enjoy my own company</h3><p>I'm proud I can go out, stroll around, and spend time with myself. My own company can be enough.</p></article>
+        <article class="card goal"><span class="g-ico">✈</span><h3>Places to explore</h3><div class="chips big"><span>🇰🇷 South Korea</span><span>🇮🇹 Italy</span><span>🇨🇳 China</span><span>🇹🇭 Thailand</span><span>🇪🇺 Europe</span></div></article>
+      </div>
+    </section>
+
+    <section id="gallery" class="reveal alt">
+      <div class="head"><span class="kicker">08 · THE PEOPLE &amp; MOMENTS</span><h2>Memories worth <em>keeping.</em></h2><p>Tap a Polaroid to open the story behind the photo.</p></div>
+      <div class="gallery">
+        <figure class="g g-wide memory-card" tabindex="0" role="button" data-memory="people"><img src="images/my-people.jpg" alt="With my loved ones" data-ph="PHOTO WITH YOUR PEOPLE"><figcaption>My people, my heart <span>Open memory ↗</span></figcaption></figure>
+        <figure class="g memory-card" tabindex="0" role="button" data-memory="little"><img src="images/memory-one.jpg" alt="A favorite memory" data-ph="FAVORITE MEMORY"><figcaption>The little moments <span>Open memory ↗</span></figcaption></figure>
+        <figure class="g memory-card" tabindex="0" role="button" data-memory="grateful"><img src="images/memory-two.jpg" alt="Another memory" data-ph="ANOTHER MEMORY"><figcaption>Always grateful <span>Open memory ↗</span></figcaption></figure>
+        <figure class="g memory-card" tabindex="0" role="button" data-memory="coffee"><img src="images/kdrama-coffee.jpg" alt="Watching a K-drama with coffee" data-ph="K-DRAMA + COFFEE PHOTO"><figcaption>K-drama &amp; coffee nights ☕ <span>Open memory ↗</span></figcaption></figure>
+        <figure class="g memory-card" tabindex="0" role="button" data-memory="fanmeet"><img src="images/ahof-fanmeet.jpg" alt="At the AHOF fanmeet" data-ph="AHOF FANMEET PHOTO"><figcaption>AHOF fanmeet day ♫ <span>Open memory ↗</span></figcaption></figure>
+        <figure class="g memory-card" tabindex="0" role="button" data-memory="nature"><img src="images/nature-me.jpg" alt="Me embracing nature" data-ph="ME IN NATURE PHOTO"><figcaption>Embracing nature 🌿 <span>Open memory ↗</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="charlene-exe" class="reveal terminal-section">
+      <div class="head"><span class="kicker">A LITTLE IT-INSPIRED DETOUR</span><h2>Run <em>charlene.exe</em></h2><p>Not a real terminal—just a playful way to explore the human behind the screen. Choose a command.</p></div>
+      <div class="terminal card">
+        <div class="terminal-top"><span class="terminal-dots"><i></i><i></i><i></i></span><span>charlene.exe · personal profile</span><span class="terminal-status">● online</span></div>
+        <div class="terminal-screen"><p class="terminal-prompt">visitor@charlene:~$ <span>help</span></p><p class="terminal-hint">Select a command to run:</p>
+          <div class="command-list" role="group" aria-label="Profile commands">
+            <button type="button" class="command-btn" data-command="about">about</button><button type="button" class="command-btn" data-command="projects">projects</button><button type="button" class="command-btn" data-command="dreams">dreams</button><button type="button" class="command-btn" data-command="funfact">funfact</button>
+          </div>
+          <div class="command-output" id="commandOutput" aria-live="polite"><span class="output-mark">›</span> Welcome! Choose a command to reveal a little more about me.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="reveal">
+      <div class="head"><span class="kicker">10 · LET'S PLAY</span><h2>How well do you <em>know me?</em></h2><p>Three quick questions. No pressure.</p></div>
+      <div class="quiz card" id="quiz-box"></div>
+    </section>
+
+    <section id="visitor-note" class="reveal visitor-note-section">
+      <div class="head"><span class="kicker">A SMALL SPACE FOR YOU</span><h2>Leave a little <em>note.</em></h2><p>Pick a note to leave behind. This demo shows your choice on this page only; it doesn't send or store personal messages.</p></div>
+      <div class="note-card card"><div class="note-sparkle">✉</div><h3>What would you like to leave in my little world?</h3><div class="note-options" role="group" aria-label="Choose a visitor note"><button type="button" class="note-choice" data-note="A song recommendation is always welcome! 🎧">🎧 Recommend me a song</button><button type="button" class="note-choice" data-note="Sending a little encouragement your way. 🌱">🌱 Leave encouragement</button><button type="button" class="note-choice" data-note="Your little world was a lovely place to visit. ✨">✨ I enjoyed exploring</button><button type="button" class="note-choice" data-note="Keep learning and making things! 💚">💚 Keep creating</button></div><div class="note-response" id="noteResponse" aria-live="polite" hidden></div><p class="note-disclaimer">Your selection is temporary and disappears when the page is refreshed.</p></div>
+    </section>
+
+    <section id="contact" class="reveal alt">
+      <div class="contact-wrap">
+        <div>
+          <span class="kicker">12 · SAY HELLO</span>
+          <h2>Find me around <em>the internet.</em></h2>
+          <p>Want to share a song, a drama recommendation, or just say hi?</p>
+        </div>
+        <div class="links">
+          <a class="clink" href="https://www.facebook.com/charlenejoy.catayas" target="_blank" rel="noopener noreferrer"><span>f</span><div><small>FACEBOOK</small><strong>Charlene Joy Catayas</strong></div><i>↗</i></a>
+          <a class="clink" href="https://www.instagram.com/charrry_ish/" target="_blank" rel="noopener noreferrer"><span>◎</span><div><small>INSTAGRAM</small><strong>@charrry_ish</strong></div><i>↗</i></a>
+          <a class="clink" href="mailto:catayascharlene@gmail.com"><span>✉</span><div><small>EMAIL</small><strong>catayascharlene@gmail.com</strong></div><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <div class="ticker"><div class="ticker-track">
+      <span>★ CLUB GOVERNOR</span><span>✎ SPORTS WRITER</span><span>♫ STAYOLOGY PAGE MANAGER</span><span>⌘ IT STUDENT</span><span>✧ DANCER</span><span>☕ SPANISH LATTE LOVER</span>
+      <span>★ CLUB GOVERNOR</span><span>✎ SPORTS WRITER</span><span>♫ STAYOLOGY PAGE MANAGER</span><span>⌘ IT STUDENT</span><span>✧ DANCER</span><span>☕ SPANISH LATTE LOVER</span>
+    </div></div>
+
+    <!-- SIGNATURE INTERACTION: MOOD PICKER -->
+    
+
+    <!-- ABOUT -->
+    
+
+    <!-- ACHIEVEMENTS -->
+    
+
+    <!-- PROJECTS -->
+    
+
+    <!-- PLAYFUL IT IDENTITY: SIMULATED COMMAND CONSOLE -->
+    
+
+    <!-- SKILLS -->
+    
+
+    <!-- FAVORITES -->
+    
+
+    <!-- QUIZ -->
+    
+
+    <!-- GALLERY -->
+    
+
+    <!-- WISHLIST -->
+    
+
+    <!-- VISITOR NOTE: PRESET REACTIONS, NO MESSAGE SERVER REQUIRED -->
+    
+
+    <!-- CONTACT -->
+    
+
+    <section class="closing">
+      <span>✿</span>
+      <h2>Thanks for spending a little time in <em>my world.</em></h2>
+      <p>Life is full of little things worth noticing. I'm glad you noticed these.</p>
+      <a class="btn btn-primary" href="#home">Back to the top ↑</a>
+    </section>
+
+    <footer class="footer"><span>Made with curiosity, color, and a love for the little things.</span><span>© <span id="year"></span> Charlene Joy</span></footer>
+  </main>
+
+  <div class="memory-modal" id="memoryModal" role="dialog" aria-modal="true" aria-labelledby="memoryTitle" hidden><div class="memory-dialog card"><button class="memory-close" id="memoryClose" type="button" aria-label="Close memory">✕</button><span class="kicker">A MOMENT, A MEANING</span><h2 id="memoryTitle">A little memory</h2><p id="memoryWhat"></p><p><strong>Why I keep it close:</strong> <span id="memoryWhy"></span></p><p><strong>What it reminds me:</strong> <span id="memoryMeaning"></span></p><button class="btn btn-primary" id="memoryDone" type="button">Keep this memory ♥</button></div></div>
+  <div class="lightbox" id="lightbox" hidden><button class="lb-close" id="lbClose" aria-label="Close">✕</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
